@@ -11,6 +11,18 @@
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "golang package",
+            "command": "go",
+            "args": [
+                "get", "-u",
+                "github.com/AsynkronIT/goconsole", 
+                "github.com/AsynkronIT/protoactor-go/remote",
+                "github.com/AsynkronIT/protoactor-go/actor"
+            ],
+            "isBuildCommand": true,
+            "showOutput": "always"
         }
     ]
 }
