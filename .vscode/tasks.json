@@ -1,0 +1,16 @@
+{
+    "version": "0.1.0",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "build",
+            "command": "dotnet",
+            "args": [
+                "build","${workspaceRoot}/CSharp/RemoteActivate/ProtoActorDemo.sln"
+            ],
+            "isBuildCommand": false,
+            "problemMatcher": "$msCompile"
+        } 
+    ]
+}
