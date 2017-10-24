@@ -571,3 +571,8 @@ $RECYCLE.BIN/
 # should be stored in the .pubxml.user file.
 
 # End of https://www.gitignore.io/api/go,macos,csharp,windows,jetbrains,visualstudio,visualstudiocode
+
+#VSCode-Go
+debug
+node1.exe
+node2.exe

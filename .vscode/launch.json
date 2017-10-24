@@ -1,9 +1,23 @@
 {
-   // Use IntelliSense to find out which attributes exist for C# debugging
-   // Use hover for the description of the existing attributes
-   // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
-   "version": "2.0.0",
-   "configurations": [
+    // Use IntelliSense to find out which attributes exist for C# debugging
+    // Use hover for the description of the existing attributes
+    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "Launch Node1 (Go)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceRoot}/golang/remoteactivate/node1/main.go"
+        },
+        {
+            "name": "Launch Node2 (Go)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceRoot}/golang/remoteactivate/node2/main.go"
+        },
         {
             "name": ".NET Core Launch (Node1)",
             "type": "coreclr",
@@ -14,7 +28,7 @@
             "args": [],
             "cwd": "${workspaceRoot}/CSharp/RemoteActivate/Node1",
             // For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
-            "console":"externalTerminal",
+            "console": "externalTerminal",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart"
         },
@@ -28,7 +42,7 @@
             "args": [],
             "cwd": "${workspaceRoot}/CSharp/RemoteActivate/Node2",
             // For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
-            "console":"externalTerminal",
+            "console": "externalTerminal",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart"
         }
@@ -40,7 +54,21 @@
                 ".NET Core Launch (Node1)",
                 ".NET Core Launch (Node2)"
             ]
+        },
+        {
+            "name": "Go Node1 & Node2",
+            "configurations": [
+                "Launch Node1 (Go)",
+                "Launch Node2 (Go)"
+            ]
+        },
+        {
+            "name": "C# Node1 & Go Node2",
+            "configurations": [
+                ".NET Core Launch (Node1)",
+                "Launch Node2 (Go)"
+            ]
         }
-    ]
 
+    ]
 }
