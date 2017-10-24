@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>library</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="build.bat" />
+    <None Include="Protos.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.3.0" />
+    <PackageReference Include="Proto.Actor" Version="0.1.13" />
+    <PackageReference Include="Proto.Mailbox" Version="0.1.13" />
+    <PackageReference Include="System.ValueTuple" Version="4.4.0" />
+  </ItemGroup>
+</Project>
