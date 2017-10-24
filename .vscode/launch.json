@@ -8,7 +8,7 @@
             "name": ".NET Core Launch (Node1)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "build C#",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceRoot}/CSharp/RemoteActivate/Node1/bin/Debug/netcoreapp2.0/Node1.dll",
             "args": [],
@@ -22,7 +22,7 @@
             "name": ".NET Core Launch (Node2)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "build C#",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceRoot}/CSharp/RemoteActivate/Node2/bin/Debug/netcoreapp2.0/Node2.dll",
             "args": [],

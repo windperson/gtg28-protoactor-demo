@@ -26,7 +26,7 @@ namespace Node2
                         Console.WriteLine("Receive HelloRequest, send back Response");
                         ctx.Respond(new HelloResponse
                         {
-                            Message = "Hello from node 2",
+                            Message = "Hello from node 2 (C#)",
                         });
                         break;
                     default:
@@ -37,7 +37,7 @@ namespace Node2
 
             Remote.RegisterKnownKind("hello", props);
             Remote.Start("127.0.0.1", 12000);
-            Console.WriteLine("Node2 started, waiting for incoming message...\n");
+            Console.WriteLine("Node2(C#) started, waiting for incoming message...\n");
 
             Console.ReadLine();
         }

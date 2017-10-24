@@ -19,7 +19,7 @@ namespace Node1
             Serialization.RegisterFileDescriptor(ProtosReflection.Descriptor);
             Remote.Start("127.0.0.1", 12001);
 
-            Console.WriteLine("Start Node1, press any key to proceed\n");
+            Console.WriteLine("Start Node1(C#), press any key to proceed\n");
             Console.ReadKey();
 
             var actorPidResponse = await Remote.SpawnNamedAsync("127.0.0.1:12000", "remote", "hello", TimeSpan.FromSeconds(10));

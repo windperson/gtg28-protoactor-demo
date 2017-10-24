@@ -4,12 +4,12 @@
     "args": [],
     "tasks": [
         {
-            "taskName": "build",
+            "taskName": "build C#",
             "command": "dotnet",
             "args": [
                 "build","${workspaceRoot}/CSharp/RemoteActivate/ProtoActorDemo.sln"
             ],
-            "isBuildCommand": false,
+            "isBuildCommand": true,
             "problemMatcher": "$msCompile"
         } 
     ]
